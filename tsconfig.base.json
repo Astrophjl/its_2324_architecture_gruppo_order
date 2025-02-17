@@ -22,7 +22,8 @@
       "@warehouse/events": ["libs/warehouse/events/src/index.ts"],
       "@warehouse/message-client": [
         "libs/warehouse/message-client/src/index.ts"
-      ]
+      ],
+      "@order/config": ["libs/order/config/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

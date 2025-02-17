@@ -1,0 +1,9 @@
+{
+  "name": "order-event-client",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/order/event-client/src",
+  "projectType": "library",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project order-event-client --web",
+  "targets": {}
+}

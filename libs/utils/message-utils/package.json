@@ -1,8 +1,6 @@
 {
   "name": "@utils/message-utils",
   "version": "0.0.1",
-  "dependencies": {
-    "@utils/message-utils": "file:"
-  },
+  "dependencies": {},
   "private": true
 }
