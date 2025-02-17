@@ -1,6 +1,8 @@
 {
   "name": "@utils/event-utils",
   "version": "0.0.1",
-  "dependencies": {},
+  "dependencies": {
+    "@utils/event-utils": "file:"
+  },
   "private": true
 }

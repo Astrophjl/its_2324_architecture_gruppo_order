@@ -1,6 +1,8 @@
 {
   "name": "@warehouse/event-client",
   "version": "0.0.1",
-  "dependencies": {},
+  "dependencies": {
+    "@warehouse/event-client": "file:"
+  },
   "private": true
 }
