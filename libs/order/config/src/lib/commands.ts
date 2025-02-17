@@ -1,28 +1,21 @@
-import {
-  clientMessageDecoratorFactory,
-  MessagesDefinition,
-} from '@utils/message-utils';
+import { EventsDefinition } from '@utils/event-utils';
 
-export class GetStockQuantityInput {
-  productId!: string;
+export class OrderStatusPayload {
+  orderId!: string;
+  status!: string;
 }
 
-export class GetStockQuantityResult {
-  productId!: string;
-  quantity!: number;
-}
-
-export const OrderMessageDefinitions = {
-  StockQuantityMessage: {
-    identifier: 'getStockQuantity',
-    payloadType: GetStockQuantityInput,
-    responseType: GetStockQuantityResult,
+export const OrderEventsDefinitions = {
+  OrderStatusChange: {
+    identifier: 'order_status_change',
+    payloadType: OrderStatusPayload,
   },
-} satisfies MessagesDefinition;
-
-export const OrderMessage = clientMessageDecoratorFactory(
-  OrderMessageDefinitions,
-  'wh'
-);
-
-// Eventi in uscita
+  PaymentConfirmed: {
+    identifier: 'payment_confirmed',
+    payloadType: OrderStatusPayload,
+  },
+  ShipmentStarted: {
+    identifier: 'shipment_start',
+    payloadType: OrderStatusPayload,
+  },
+} satisfies EventsDefinition;

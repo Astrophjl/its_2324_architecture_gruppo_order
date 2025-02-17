@@ -1,5 +1,5 @@
 {
-  "name": "warehouse-message-client",
+  "name": "order-message-client",
   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "libs/warehouse/message-client/src",
   "projectType": "library",
