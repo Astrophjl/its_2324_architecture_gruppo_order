@@ -1,0 +1,23 @@
+curl -X POST http://localhost:3000/orders \
+     -H "Content-Type: application/json" \
+     -d '{"productId": "123", "quantity": 2}'
+{
+    "orderId":"vwo02guvt",
+    "message":"Order created successfully"
+}
+
+curl -X GET http://localhost:3000/api/orders/vwo02guvt/status
+{
+    "status":"created"
+}
+
+Startup:
+cmd1:
+docker compose up
+
+cmd2:
+npx nx serve warehouse --verbose Vedi se funziona, se funziona esegui
+npx nx serve order
+
+cmd3: 
+esegui i comandi curl di sopra oppure su postman
